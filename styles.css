@@ -42,10 +42,10 @@ nav {
     width: 670px;
     height: 30px;
     margin: 10px;
-
+    font-size: 1rem;
 }
 
-#todo-list{
+#todo-list, #done-list {
     background-color: azure;
     border: 1px solid black;
     list-style-type: none;
@@ -53,9 +53,21 @@ nav {
     width: 700px;
 }
 
-.todo-item {
+.todo-item, .done-item {
     display: flex;
     flex-direction: row;
     margin: 10px;
     border: 1px solid black;
+}
+
+.todo-item, .done-item:hover {
+    cursor: pointer;
+}
+
+.todo-item, .done-item > p {
+    padding-left: 8px;
+}
+
+.done-item > p {
+    text-decoration: line-through;
 }
