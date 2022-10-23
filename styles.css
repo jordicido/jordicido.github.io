@@ -64,8 +64,12 @@ nav {
     cursor: pointer;
 }
 
-.todo-item, .done-item > p {
-    padding-left: 8px;
+.todo-item > p, .done-item > p {
+    padding-left: 16px;
+}
+
+.todo-item > input, .done-item > input {
+    padding-left: 16px;
 }
 
 .done-item > p {
